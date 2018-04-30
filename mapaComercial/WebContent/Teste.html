@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Dubai Hotels</title>
+  </head>
+  
+  <script type="text/javascript"
+	src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+
+  <body onload = "Json()">
+    <h2>Dubai Hotels</h2>
+    <div id = "map" style = "width:640px; height:480px;"></div>
+      <script>
+
+        // fake JSON call
+        
+          var json ; 
+           		
+        
+        function Json() {
+        	
+        	
+     
+        	
+        	$.getJSON('Output.json', function(data) {
+    			
+    			json = data;
+   			           			
+    			    	       	
+            	loadMap();
+    			       			 
+  			
+    		});
+        	
+        	
+           	var recursiva = function () {
+        	    console.log("Se passaram 1 segundo!");
+        	    setInterval(recursiva,5000);
+        	    
+        	}
+        	recursiva();
+ 
+    		
+			
+		}
+   
+     
+  
+         function loadMap() {
+          // Initialize Google Maps
+          const mapOptions = {
+        		  center:new google.maps.LatLng(-22.80355815, -43.35905165),
+            zoom: 11
+          }
+          const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+          // Creating the map
+         // map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+          
+         // Looping through all the entries from the JSON data
+          for(var i = 0; i < json.length; i++) {
+            
+            // Current object
+            var obj = json[i];
+
+            // Adding a new marker for the object
+            var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(obj.latitude,obj.longitude),
+              map: map,
+              title: obj.title // this works, giving the marker a title with the correct title
+            });
+            
+            // Adding a new info window for the object
+            var clicker = addClicker(marker, obj.title);
+            
+         
+
+
+
+          } // end loop
+          
+          
+          // Adding a new click event listener for the object
+          function addClicker(marker, content) {
+            google.maps.event.addListener(marker, 'click', function() {
+              
+              if (infowindow) {infowindow.close();}
+              infowindow = new google.maps.InfoWindow({content: content});
+              infowindow.open(map, marker);
+              
+            });
+          }
+          
+        } 
+      </script>
+      <script 
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8Bexj4YRrelyUGjFb5npzYFqiLKGJuTU">
+    </script>
+  </body>
+</html>
