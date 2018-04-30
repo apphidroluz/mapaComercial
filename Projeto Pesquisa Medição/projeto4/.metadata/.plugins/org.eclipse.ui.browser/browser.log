@@ -1,0 +1,25 @@
+
+nov 23, 2017 11:11:37.71 NEW SESSION
+nov 23, 2017 11:11:37.71 [8076:8024:1123/111137.709:ERROR:external_registry_loader_win.cc(157)] File c:\program files (x86)\copernic\desktopsearch\ChromeConnector\ChromeConnector.crx for key Software\Google\Chrome\Extensions\cnnbdaahphjgdgfhliignpepgnbnfomp does not exist or is not readable.
+nov 23, 2017 11:18:29.64 [8024:7164:1123/111829.639:ERROR:external_registry_loader_win.cc(157)] File c:\program files (x86)\copernic\desktopsearch\ChromeConnector\ChromeConnector.crx for key Software\Google\Chrome\Extensions\cnnbdaahphjgdgfhliignpepgnbnfomp does not exist or is not readable.
+nov 23, 2017 11:18:48.84 [6100:8692:1123/111848.844:ERROR:external_registry_loader_win.cc(157)] File c:\program files (x86)\copernic\desktopsearch\ChromeConnector\ChromeConnector.crx for key Software\Google\Chrome\Extensions\cnnbdaahphjgdgfhliignpepgnbnfomp does not exist or is not readable.
+nov 23, 2017 11:38:41.37 [8096:8564:1123/113841.376:ERROR:external_registry_loader_win.cc(157)] File c:\program files (x86)\copernic\desktopsearch\ChromeConnector\ChromeConnector.crx for key Software\Google\Chrome\Extensions\cnnbdaahphjgdgfhliignpepgnbnfomp does not exist or is not readable.
+
+nov 23, 2017 15:48:19.93 NEW SESSION
+nov 23, 2017 15:48:19.93 [2804:8888:1123/154819.930:ERROR:external_registry_loader_win.cc(157)] File c:\program files (x86)\copernic\desktopsearch\ChromeConnector\ChromeConnector.crx for key Software\Google\Chrome\Extensions\cnnbdaahphjgdgfhliignpepgnbnfomp does not exist or is not readable.
+nov 23, 2017 15:59:37.80 [2804:1252:1123/155937.800:ERROR:page_load_metrics_update_dispatcher.cc(75)] Invalid response_start 5.202 s for parse_start 5.201 s
+nov 23, 2017 15:59:37.80 [2804:1252:1123/155937.800:ERROR:page_load_metrics_update_dispatcher.cc(75)] Invalid response_start 5.202 s for parse_start 5.201 s
+nov 23, 2017 15:59:38.81 [2804:1252:1123/155938.812:ERROR:page_load_metrics_update_dispatcher.cc(75)] Invalid response_start 5.202 s for parse_start 5.201 s
+nov 23, 2017 15:59:39.81 [2804:1252:1123/155939.812:ERROR:page_load_metrics_update_dispatcher.cc(75)] Invalid response_start 5.202 s for parse_start 5.201 s
+nov 23, 2017 16:15:07.44 [5896:6732:1123/161507.444:ERROR:external_registry_loader_win.cc(157)] File c:\program files (x86)\copernic\desktopsearch\ChromeConnector\ChromeConnector.crx for key Software\Google\Chrome\Extensions\cnnbdaahphjgdgfhliignpepgnbnfomp does not exist or is not readable.
+nov 23, 2017 16:22:01.13 [5896:1632:1123/162201.131:ERROR:page_load_metrics_update_dispatcher.cc(75)] Invalid response_start 5.989 s for parse_start 5.987 s
+nov 23, 2017 16:22:01.13 [5896:1632:1123/162201.132:ERROR:page_load_metrics_update_dispatcher.cc(75)] Invalid response_start 5.989 s for parse_start 5.987 s
+nov 23, 2017 16:22:02.13 [5896:1632:1123/162202.133:ERROR:page_load_metrics_update_dispatcher.cc(75)] Invalid response_start 5.989 s for parse_start 5.987 s
+nov 23, 2017 16:22:03.13 [5896:1632:1123/162203.133:ERROR:page_load_metrics_update_dispatcher.cc(75)] Invalid response_start 5.989 s for parse_start 5.987 s
+nov 23, 2017 16:22:03.68 [5896:1632:1123/162203.683:ERROR:page_load_metrics_update_dispatcher.cc(75)] Invalid response_start 5.989 s for parse_start 5.987 s
+nov 23, 2017 16:25:08.30 [7888:6852:1123/162508.309:ERROR:external_registry_loader_win.cc(157)] File c:\program files (x86)\copernic\desktopsearch\ChromeConnector\ChromeConnector.crx for key Software\Google\Chrome\Extensions\cnnbdaahphjgdgfhliignpepgnbnfomp does not exist or is not readable.
+nov 23, 2017 16:27:50.94 [8152:9044:1123/162750.943:ERROR:external_registry_loader_win.cc(157)] File c:\program files (x86)\copernic\desktopsearch\ChromeConnector\ChromeConnector.crx for key Software\Google\Chrome\Extensions\cnnbdaahphjgdgfhliignpepgnbnfomp does not exist or is not readable.
+nov 23, 2017 16:29:00.00 [3212:7008:1123/162900.009:ERROR:external_registry_loader_win.cc(157)] File c:\program files (x86)\copernic\desktopsearch\ChromeConnector\ChromeConnector.crx for key Software\Google\Chrome\Extensions\cnnbdaahphjgdgfhliignpepgnbnfomp does not exist or is not readable.
+
+nov 27, 2017 09:00:54.89 NEW SESSION
+nov 27, 2017 09:00:54.89 [7636:1264:1127/090054.894:ERROR:external_registry_loader_win.cc(157)] File c:\program files (x86)\copernic\desktopsearch\ChromeConnector\ChromeConnector.crx for key Software\Google\Chrome\Extensions\cnnbdaahphjgdgfhliignpepgnbnfomp does not exist or is not readable.
