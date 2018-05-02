@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Map</title>
+<meta name="viewport" content="initial-scale=1.0">
+<meta charset="utf-8">
+<style>
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+	height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+</style>
+</head>
+
+ <script type="text/javascript"
+	src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<body >
+	<div id="map"></div>
+	<script>
+		var json;
+
+		function Json() {
+
+			$.getJSON('Output.json', function(data) {
+				json = data;
+				
+				initMap();
+			});
+
+			var recursiva = function() {
+			
+				setInterval(recursiva, 5000);
+			}
+
+			recursiva();
+		}
+
+		var map;
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('map'), {
+				center : {
+					lat : -22.914590,
+					lng : -43.277590
+				},
+				zoom : 11
+			});
+
+			//var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+			for (var i = 0; i < json.length; i++) {
+
+				// Current object
+				var obj = json[i];
+				
+						// Adding a new marker for the object
+				var marker = new google.maps.Marker({
+					position : new google.maps.LatLng(obj.latitude, obj.longitude),
+					map : map, 
+					title : obj.title
+				// this works, giving the marker a title with the correct title
+				});
+				
+				// Adding a new info window for the object
+								
+			} // end loop
+			
+			
+			
+				var markerCluster = new MarkerClusterer(
+					map,
+					marker,
+					{
+						imagePath : 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+					});
+		}
+		</script>
+	<script
+		src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+		
+	</script>
+	
+		<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8Bexj4YRrelyUGjFb5npzYFqiLKGJuTU&callback=Json">
+    </script>
+</body>
+</html>
